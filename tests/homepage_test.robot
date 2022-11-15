@@ -4,6 +4,7 @@ Resource    ../page_objects/login_page.robot
 Resource    ../page_objects/home_page.robot
 Resource    ../resources/utilities.robot
 Suite Setup    Open browser and goto URL
+Suite Teardown     Close All Browsers
 
 
 *** Variables ***

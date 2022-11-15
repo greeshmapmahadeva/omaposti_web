@@ -1,93 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.6 on linux)" generated="20221115 13:53:48.035" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.6 on linux)" generated="20221115 15:07:26.586" rpa="false" schemaversion="3">
 <suite id="s1" name="Homepage Test" source="/home/greeshma/Documents/omaposti_project/tests/homepage_test.robot">
 <kw name="Open browser and goto URL" library="utilities" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221115 13:53:48.238" level="INFO">Opening browser 'Chrome' to base url 'https://www.posti.fi/fi'.</msg>
-<status status="PASS" starttime="20221115 13:53:48.237" endtime="20221115 13:54:04.724"/>
+<msg timestamp="20221115 15:07:28.890" level="INFO">Opening browser 'Chrome' to base url 'https://www.posti.fi/fi'.</msg>
+<status status="PASS" starttime="20221115 15:07:28.889" endtime="20221115 15:08:40.650"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20221115 13:54:04.724" endtime="20221115 13:54:05.037"/>
+<status status="PASS" starttime="20221115 15:08:40.650" endtime="20221115 15:08:41.422"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>id:onetrust-accept-btn-handler</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:05.038" endtime="20221115 13:54:06.559"/>
+<status status="PASS" starttime="20221115 15:08:41.422" endtime="20221115 15:08:44.204"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id:onetrust-accept-btn-handler</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:06.561" level="INFO">Clicking element 'id:onetrust-accept-btn-handler'.</msg>
-<status status="PASS" starttime="20221115 13:54:06.560" endtime="20221115 13:54:06.686"/>
+<msg timestamp="20221115 15:08:44.204" level="INFO">Clicking element 'id:onetrust-accept-btn-handler'.</msg>
+<status status="PASS" starttime="20221115 15:08:44.204" endtime="20221115 15:08:45.879"/>
 </kw>
-<status status="PASS" starttime="20221115 13:53:48.237" endtime="20221115 13:54:06.686"/>
+<status status="PASS" starttime="20221115 15:07:28.889" endtime="20221115 15:08:45.879"/>
 </kw>
-<test id="s1-t1" name="Validate successful login into homepage" line="22">
+<test id="s1-t1" name="Validate successful login into homepage" line="23">
 <kw name="Select language" library="login_page">
 <arg>EN</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${btn_language}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:06.688" endtime="20221115 13:54:06.738"/>
+<status status="PASS" starttime="20221115 15:08:45.883" endtime="20221115 15:08:46.240"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${btn_language}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:06.739" level="INFO">Clicking element '//button[@id="topbar-locale-dropdown"]/span'.</msg>
-<status status="PASS" starttime="20221115 13:54:06.738" endtime="20221115 13:54:07.325"/>
+<msg timestamp="20221115 15:08:46.241" level="INFO">Clicking element '//button[@id="topbar-locale-dropdown"]/span'.</msg>
+<status status="PASS" starttime="20221115 15:08:46.241" endtime="20221115 15:08:47.154"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>id:${language}</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:07.325" endtime="20221115 13:54:07.870"/>
+<status status="PASS" starttime="20221115 15:08:47.154" endtime="20221115 15:08:47.424"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id:${language}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:07.870" level="INFO">Clicking element 'id:EN'.</msg>
-<status status="PASS" starttime="20221115 13:54:07.870" endtime="20221115 13:54:08.736"/>
+<msg timestamp="20221115 15:08:47.426" level="INFO">Clicking element 'id:EN'.</msg>
+<status status="PASS" starttime="20221115 15:08:47.425" endtime="20221115 15:08:47.579"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:06.688" endtime="20221115 13:54:08.737"/>
+<status status="PASS" starttime="20221115 15:08:45.882" endtime="20221115 15:08:47.579"/>
 </kw>
 <kw name="Click login and Select Omaposti" library="login_page">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${btn_login}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:08.738" endtime="20221115 13:54:10.092"/>
+<status status="PASS" starttime="20221115 15:08:47.580" endtime="20221115 15:08:48.287"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${btn_login}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:10.093" level="INFO">Clicking element '//button[@aria-label="Log in"]'.</msg>
-<status status="PASS" starttime="20221115 13:54:10.093" endtime="20221115 13:54:10.211"/>
+<msg timestamp="20221115 15:08:48.288" level="INFO">Clicking element '//button[@aria-label="Log in"]'.</msg>
+<status status="PASS" starttime="20221115 15:08:48.288" endtime="20221115 15:08:48.412"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${lnk_omaposti}</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:10.211" endtime="20221115 13:54:10.262"/>
+<status status="PASS" starttime="20221115 15:08:48.413" endtime="20221115 15:08:48.458"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${lnk_omaposti}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:10.262" level="INFO">Clicking element '//a[@aria-label="OmaPosti"]'.</msg>
-<status status="PASS" starttime="20221115 13:54:10.262" endtime="20221115 13:54:13.662"/>
+<msg timestamp="20221115 15:08:48.459" level="INFO">Clicking element '//a[@aria-label="OmaPosti"]'.</msg>
+<status status="PASS" starttime="20221115 15:08:48.458" endtime="20221115 15:08:51.562"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <arg>${txt_loginpage}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20221115 13:54:15.101" level="INFO">Current page contains element '//h1[text()="Posti Online Services"]'.</msg>
-<status status="PASS" starttime="20221115 13:54:13.662" endtime="20221115 13:54:15.101"/>
+<msg timestamp="20221115 15:08:51.576" level="INFO">Current page contains element '//h1[text()="Posti Online Services"]'.</msg>
+<status status="PASS" starttime="20221115 15:08:51.562" endtime="20221115 15:08:51.577"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:08.737" endtime="20221115 13:54:15.101"/>
+<status status="PASS" starttime="20221115 15:08:47.580" endtime="20221115 15:08:51.577"/>
 </kw>
 <kw name="Enter email address and password" library="login_page">
 <arg>${username}</arg>
@@ -95,96 +95,96 @@
 <kw name="Set Log Level" library="BuiltIn">
 <arg>NONE</arg>
 <doc>Sets the log threshold to the specified level and returns the old level.</doc>
-<status status="PASS" starttime="20221115 13:54:15.103" endtime="20221115 13:54:15.104"/>
+<status status="PASS" starttime="20221115 15:08:51.578" endtime="20221115 15:08:51.578"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:username</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" starttime="20221115 13:54:15.104" endtime="20221115 13:54:16.027"/>
+<status status="PASS" starttime="20221115 15:08:51.578" endtime="20221115 15:08:52.433"/>
 </kw>
 <kw name="Set Log Level" library="BuiltIn">
 <arg>INFO</arg>
 <doc>Sets the log threshold to the specified level and returns the old level.</doc>
-<msg timestamp="20221115 13:54:16.028" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20221115 13:54:16.027" endtime="20221115 13:54:16.028"/>
+<msg timestamp="20221115 15:08:52.434" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221115 15:08:52.433" endtime="20221115 15:08:52.434"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>id:password</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:16.029" level="INFO">Typing password into text field 'id:password'.</msg>
-<msg timestamp="20221115 13:54:16.087" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20221115 13:54:16.160" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20221115 13:54:16.028" endtime="20221115 13:54:16.160"/>
+<msg timestamp="20221115 15:08:52.434" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg timestamp="20221115 15:08:52.498" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221115 15:08:52.580" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221115 15:08:52.434" endtime="20221115 15:08:52.581"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${btn_loginpage_login}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:16.161" level="INFO">Clicking button 'id:posti_login_btn'.</msg>
-<status status="PASS" starttime="20221115 13:54:16.160" endtime="20221115 13:54:17.969"/>
+<msg timestamp="20221115 15:08:52.582" level="INFO">Clicking button 'id:posti_login_btn'.</msg>
+<status status="PASS" starttime="20221115 15:08:52.581" endtime="20221115 15:08:54.175"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:15.102" endtime="20221115 13:54:17.969"/>
+<status status="PASS" starttime="20221115 15:08:51.577" endtime="20221115 15:08:54.175"/>
 </kw>
 <kw name="Validate successful login" library="login_page">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${txt_home}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:17.977" endtime="20221115 13:54:19.983"/>
+<status status="PASS" starttime="20221115 15:08:54.176" endtime="20221115 15:08:56.555"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <arg>${txt_home}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20221115 13:54:20.119" level="INFO">Current page contains element '//h3[text()="Home"]'.</msg>
-<status status="PASS" starttime="20221115 13:54:19.984" endtime="20221115 13:54:20.119"/>
+<msg timestamp="20221115 15:08:56.609" level="INFO">Current page contains element '//h3[text()="Home"]'.</msg>
+<status status="PASS" starttime="20221115 15:08:56.555" endtime="20221115 15:08:56.609"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:17.975" endtime="20221115 13:54:20.120"/>
+<status status="PASS" starttime="20221115 15:08:54.175" endtime="20221115 15:08:56.609"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:06.686" endtime="20221115 13:54:20.124"/>
+<status status="PASS" starttime="20221115 15:08:45.880" endtime="20221115 15:08:56.609"/>
 </test>
-<test id="s1-t2" name="TC_01_Validate Filter for letters - only letters should be visible in the feed" line="28">
+<test id="s1-t2" name="TC_01_Validate Filter for letters - only letters should be visible in the feed" line="29">
 <kw name="Select document_type from the list" library="home_page">
 <arg>letter</arg>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>//button[contains(@aria-label,"Show only")]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:20.145" level="INFO">Clicking button '//button[contains(@aria-label,"Show only")]'.</msg>
-<status status="PASS" starttime="20221115 13:54:20.136" endtime="20221115 13:54:20.610"/>
+<msg timestamp="20221115 15:08:56.616" level="INFO">Clicking button '//button[contains(@aria-label,"Show only")]'.</msg>
+<status status="PASS" starttime="20221115 15:08:56.614" endtime="20221115 15:08:57.440"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${document_type}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20221115 13:54:20.611" level="INFO">letter</msg>
-<status status="PASS" starttime="20221115 13:54:20.610" endtime="20221115 13:54:20.611"/>
+<msg timestamp="20221115 15:08:57.441" level="INFO">letter</msg>
+<status status="PASS" starttime="20221115 15:08:57.441" endtime="20221115 15:08:57.441"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//li[@value="${document_type}"]</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:20.611" endtime="20221115 13:54:20.654"/>
+<status status="PASS" starttime="20221115 15:08:57.442" endtime="20221115 15:08:57.501"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//li[@value="${document_type}"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:20.658" level="INFO">Clicking element '//li[@value="letter"]'.</msg>
-<status status="PASS" starttime="20221115 13:54:20.655" endtime="20221115 13:54:20.840"/>
+<msg timestamp="20221115 15:08:57.504" level="INFO">Clicking element '//li[@value="letter"]'.</msg>
+<status status="PASS" starttime="20221115 15:08:57.502" endtime="20221115 15:08:57.664"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:20.134" endtime="20221115 13:54:20.840"/>
+<status status="PASS" starttime="20221115 15:08:56.612" endtime="20221115 15:08:57.664"/>
 </kw>
 <kw name="Count the number of inbox feeds and list the document type" library="home_page">
 <kw name="Get Element Count" library="SeleniumLibrary">
 <var>${count}</var>
 <arg>(//button[contains(@class,"omaposti-core__sc") and @lang="en"])</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<msg timestamp="20221115 13:54:20.865" level="INFO">${count} = 1</msg>
-<status status="PASS" starttime="20221115 13:54:20.842" endtime="20221115 13:54:20.865"/>
+<msg timestamp="20221115 15:08:57.689" level="INFO">${count} = 1</msg>
+<status status="PASS" starttime="20221115 15:08:57.665" endtime="20221115 15:08:57.689"/>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <var>@{list_feed}</var>
 <doc>Returns a list containing given items.</doc>
-<msg timestamp="20221115 13:54:20.867" level="INFO">@{list_feed} = [ ]</msg>
-<status status="PASS" starttime="20221115 13:54:20.866" endtime="20221115 13:54:20.867"/>
+<msg timestamp="20221115 15:08:57.690" level="INFO">@{list_feed} = [ ]</msg>
+<status status="PASS" starttime="20221115 15:08:57.689" endtime="20221115 15:08:57.690"/>
 </kw>
 <for flavor="IN RANGE">
 <var>${i}</var>
@@ -196,92 +196,92 @@
 <var>${document_type}</var>
 <arg>(//div[contains(@class,"omaposti-core__sc")]/span[text()="Shipment" or text()="Letter" or text()="Invoice"])</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:21.092" level="INFO">${document_type} = Letter</msg>
-<status status="PASS" starttime="20221115 13:54:20.899" endtime="20221115 13:54:21.092"/>
+<msg timestamp="20221115 15:08:57.729" level="INFO">${document_type} = Letter</msg>
+<status status="PASS" starttime="20221115 15:08:57.692" endtime="20221115 15:08:57.729"/>
 </kw>
 <kw name="Append To List" library="Collections">
 <arg>${list_feed}</arg>
 <arg>${document_type}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20221115 13:54:21.092" endtime="20221115 13:54:21.093"/>
+<status status="PASS" starttime="20221115 15:08:57.729" endtime="20221115 15:08:57.729"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:20.899" endtime="20221115 13:54:21.093"/>
+<status status="PASS" starttime="20221115 15:08:57.691" endtime="20221115 15:08:57.729"/>
 </iter>
-<status status="PASS" starttime="20221115 13:54:20.867" endtime="20221115 13:54:21.093"/>
+<status status="PASS" starttime="20221115 15:08:57.690" endtime="20221115 15:08:57.729"/>
 </for>
 <kw name="Log" library="BuiltIn">
 <arg>${list_feed}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20221115 13:54:21.094" level="INFO">['Letter']</msg>
-<status status="PASS" starttime="20221115 13:54:21.093" endtime="20221115 13:54:21.094"/>
+<msg timestamp="20221115 15:08:57.730" level="INFO">['Letter']</msg>
+<status status="PASS" starttime="20221115 15:08:57.729" endtime="20221115 15:08:57.730"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${list_feed}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20221115 13:54:21.094" level="INFO">${list_feed} = ['Letter']</msg>
-<status status="PASS" starttime="20221115 13:54:21.094" endtime="20221115 13:54:21.094"/>
+<msg timestamp="20221115 15:08:57.730" level="INFO">${list_feed} = ['Letter']</msg>
+<status status="PASS" starttime="20221115 15:08:57.730" endtime="20221115 15:08:57.730"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:20.842" endtime="20221115 13:54:21.094"/>
+<status status="PASS" starttime="20221115 15:08:57.664" endtime="20221115 15:08:57.731"/>
 </kw>
 <kw name="Validate list_feed contains only the filtered type - Letter" library="home_page">
 <kw name="List Should Not Contain Value" library="Collections">
 <arg>${list_feed}</arg>
 <arg>Shipment</arg>
 <doc>Fails if the ``value`` is found from ``list``.</doc>
-<status status="PASS" starttime="20221115 13:54:21.095" endtime="20221115 13:54:21.096"/>
+<status status="PASS" starttime="20221115 15:08:57.731" endtime="20221115 15:08:57.732"/>
 </kw>
 <kw name="List Should Not Contain Value" library="Collections">
 <arg>${list_feed}</arg>
 <arg>Invoice</arg>
 <doc>Fails if the ``value`` is found from ``list``.</doc>
-<status status="PASS" starttime="20221115 13:54:21.096" endtime="20221115 13:54:21.096"/>
+<status status="PASS" starttime="20221115 15:08:57.732" endtime="20221115 15:08:57.732"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:21.095" endtime="20221115 13:54:21.096"/>
+<status status="PASS" starttime="20221115 15:08:57.731" endtime="20221115 15:08:57.732"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:20.131" endtime="20221115 13:54:21.096"/>
+<status status="PASS" starttime="20221115 15:08:56.610" endtime="20221115 15:08:57.732"/>
 </test>
-<test id="s1-t3" name="TC_02_Validate Filter for parcels - only parcel should be visible in the feed" line="34">
+<test id="s1-t3" name="TC_02_Validate Filter for parcels - only parcel should be visible in the feed" line="35">
 <kw name="Select document_type from the list" library="home_page">
 <arg>parcel</arg>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>//button[contains(@aria-label,"Show only")]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:21.099" level="INFO">Clicking button '//button[contains(@aria-label,"Show only")]'.</msg>
-<status status="PASS" starttime="20221115 13:54:21.099" endtime="20221115 13:54:21.202"/>
+<msg timestamp="20221115 15:08:57.735" level="INFO">Clicking button '//button[contains(@aria-label,"Show only")]'.</msg>
+<status status="PASS" starttime="20221115 15:08:57.734" endtime="20221115 15:08:57.815"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${document_type}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20221115 13:54:21.202" level="INFO">parcel</msg>
-<status status="PASS" starttime="20221115 13:54:21.202" endtime="20221115 13:54:21.202"/>
+<msg timestamp="20221115 15:08:57.816" level="INFO">parcel</msg>
+<status status="PASS" starttime="20221115 15:08:57.815" endtime="20221115 15:08:57.816"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//li[@value="${document_type}"]</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:21.203" endtime="20221115 13:54:21.494"/>
+<status status="PASS" starttime="20221115 15:08:57.816" endtime="20221115 15:08:57.849"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//li[@value="${document_type}"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:21.494" level="INFO">Clicking element '//li[@value="parcel"]'.</msg>
-<status status="PASS" starttime="20221115 13:54:21.494" endtime="20221115 13:54:21.634"/>
+<msg timestamp="20221115 15:08:57.849" level="INFO">Clicking element '//li[@value="parcel"]'.</msg>
+<status status="PASS" starttime="20221115 15:08:57.849" endtime="20221115 15:08:58.012"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:21.098" endtime="20221115 13:54:21.636"/>
+<status status="PASS" starttime="20221115 15:08:57.734" endtime="20221115 15:08:58.012"/>
 </kw>
 <kw name="Count the number of inbox feeds and list the document type" library="home_page">
 <kw name="Get Element Count" library="SeleniumLibrary">
 <var>${count}</var>
 <arg>(//button[contains(@class,"omaposti-core__sc") and @lang="en"])</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<msg timestamp="20221115 13:54:21.698" level="INFO">${count} = 7</msg>
-<status status="PASS" starttime="20221115 13:54:21.639" endtime="20221115 13:54:21.698"/>
+<msg timestamp="20221115 15:08:58.065" level="INFO">${count} = 7</msg>
+<status status="PASS" starttime="20221115 15:08:58.013" endtime="20221115 15:08:58.065"/>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <var>@{list_feed}</var>
 <doc>Returns a list containing given items.</doc>
-<msg timestamp="20221115 13:54:21.698" level="INFO">@{list_feed} = [ ]</msg>
-<status status="PASS" starttime="20221115 13:54:21.698" endtime="20221115 13:54:21.699"/>
+<msg timestamp="20221115 15:08:58.066" level="INFO">@{list_feed} = [ ]</msg>
+<status status="PASS" starttime="20221115 15:08:58.065" endtime="20221115 15:08:58.066"/>
 </kw>
 <for flavor="IN RANGE">
 <var>${i}</var>
@@ -293,16 +293,16 @@
 <var>${document_type}</var>
 <arg>(//div[contains(@class,"omaposti-core__sc")]/span[text()="Shipment" or text()="Letter" or text()="Invoice"])</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:21.766" level="INFO">${document_type} = Shipment</msg>
-<status status="PASS" starttime="20221115 13:54:21.700" endtime="20221115 13:54:21.766"/>
+<msg timestamp="20221115 15:08:58.134" level="INFO">${document_type} = Shipment</msg>
+<status status="PASS" starttime="20221115 15:08:58.066" endtime="20221115 15:08:58.134"/>
 </kw>
 <kw name="Append To List" library="Collections">
 <arg>${list_feed}</arg>
 <arg>${document_type}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20221115 13:54:21.766" endtime="20221115 13:54:21.767"/>
+<status status="PASS" starttime="20221115 15:08:58.134" endtime="20221115 15:08:58.135"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:21.699" endtime="20221115 13:54:21.767"/>
+<status status="PASS" starttime="20221115 15:08:58.066" endtime="20221115 15:08:58.135"/>
 </iter>
 <iter>
 <var name="${i}">2</var>
@@ -310,16 +310,16 @@
 <var>${document_type}</var>
 <arg>(//div[contains(@class,"omaposti-core__sc")]/span[text()="Shipment" or text()="Letter" or text()="Invoice"])</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:21.803" level="INFO">${document_type} = Shipment</msg>
-<status status="PASS" starttime="20221115 13:54:21.768" endtime="20221115 13:54:21.803"/>
+<msg timestamp="20221115 15:08:58.153" level="INFO">${document_type} = Shipment</msg>
+<status status="PASS" starttime="20221115 15:08:58.136" endtime="20221115 15:08:58.153"/>
 </kw>
 <kw name="Append To List" library="Collections">
 <arg>${list_feed}</arg>
 <arg>${document_type}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20221115 13:54:21.803" endtime="20221115 13:54:21.804"/>
+<status status="PASS" starttime="20221115 15:08:58.153" endtime="20221115 15:08:58.154"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:21.768" endtime="20221115 13:54:21.804"/>
+<status status="PASS" starttime="20221115 15:08:58.136" endtime="20221115 15:08:58.154"/>
 </iter>
 <iter>
 <var name="${i}">3</var>
@@ -327,16 +327,16 @@
 <var>${document_type}</var>
 <arg>(//div[contains(@class,"omaposti-core__sc")]/span[text()="Shipment" or text()="Letter" or text()="Invoice"])</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:21.823" level="INFO">${document_type} = Shipment</msg>
-<status status="PASS" starttime="20221115 13:54:21.805" endtime="20221115 13:54:21.823"/>
+<msg timestamp="20221115 15:08:58.171" level="INFO">${document_type} = Shipment</msg>
+<status status="PASS" starttime="20221115 15:08:58.154" endtime="20221115 15:08:58.171"/>
 </kw>
 <kw name="Append To List" library="Collections">
 <arg>${list_feed}</arg>
 <arg>${document_type}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20221115 13:54:21.824" endtime="20221115 13:54:21.824"/>
+<status status="PASS" starttime="20221115 15:08:58.171" endtime="20221115 15:08:58.172"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:21.805" endtime="20221115 13:54:21.824"/>
+<status status="PASS" starttime="20221115 15:08:58.154" endtime="20221115 15:08:58.172"/>
 </iter>
 <iter>
 <var name="${i}">4</var>
@@ -344,16 +344,16 @@
 <var>${document_type}</var>
 <arg>(//div[contains(@class,"omaposti-core__sc")]/span[text()="Shipment" or text()="Letter" or text()="Invoice"])</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:21.842" level="INFO">${document_type} = Shipment</msg>
-<status status="PASS" starttime="20221115 13:54:21.825" endtime="20221115 13:54:21.842"/>
+<msg timestamp="20221115 15:08:58.189" level="INFO">${document_type} = Shipment</msg>
+<status status="PASS" starttime="20221115 15:08:58.172" endtime="20221115 15:08:58.189"/>
 </kw>
 <kw name="Append To List" library="Collections">
 <arg>${list_feed}</arg>
 <arg>${document_type}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20221115 13:54:21.842" endtime="20221115 13:54:21.843"/>
+<status status="PASS" starttime="20221115 15:08:58.189" endtime="20221115 15:08:58.189"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:21.824" endtime="20221115 13:54:21.843"/>
+<status status="PASS" starttime="20221115 15:08:58.172" endtime="20221115 15:08:58.189"/>
 </iter>
 <iter>
 <var name="${i}">5</var>
@@ -361,16 +361,16 @@
 <var>${document_type}</var>
 <arg>(//div[contains(@class,"omaposti-core__sc")]/span[text()="Shipment" or text()="Letter" or text()="Invoice"])</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:21.869" level="INFO">${document_type} = Shipment</msg>
-<status status="PASS" starttime="20221115 13:54:21.843" endtime="20221115 13:54:21.869"/>
+<msg timestamp="20221115 15:08:58.214" level="INFO">${document_type} = Shipment</msg>
+<status status="PASS" starttime="20221115 15:08:58.190" endtime="20221115 15:08:58.214"/>
 </kw>
 <kw name="Append To List" library="Collections">
 <arg>${list_feed}</arg>
 <arg>${document_type}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20221115 13:54:21.869" endtime="20221115 13:54:21.869"/>
+<status status="PASS" starttime="20221115 15:08:58.214" endtime="20221115 15:08:58.214"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:21.843" endtime="20221115 13:54:21.869"/>
+<status status="PASS" starttime="20221115 15:08:58.189" endtime="20221115 15:08:58.214"/>
 </iter>
 <iter>
 <var name="${i}">6</var>
@@ -378,16 +378,16 @@
 <var>${document_type}</var>
 <arg>(//div[contains(@class,"omaposti-core__sc")]/span[text()="Shipment" or text()="Letter" or text()="Invoice"])</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:21.889" level="INFO">${document_type} = Shipment</msg>
-<status status="PASS" starttime="20221115 13:54:21.870" endtime="20221115 13:54:21.889"/>
+<msg timestamp="20221115 15:08:58.232" level="INFO">${document_type} = Shipment</msg>
+<status status="PASS" starttime="20221115 15:08:58.215" endtime="20221115 15:08:58.232"/>
 </kw>
 <kw name="Append To List" library="Collections">
 <arg>${list_feed}</arg>
 <arg>${document_type}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20221115 13:54:21.889" endtime="20221115 13:54:21.890"/>
+<status status="PASS" starttime="20221115 15:08:58.232" endtime="20221115 15:08:58.232"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:21.869" endtime="20221115 13:54:21.890"/>
+<status status="PASS" starttime="20221115 15:08:58.215" endtime="20221115 15:08:58.232"/>
 </iter>
 <iter>
 <var name="${i}">7</var>
@@ -395,92 +395,92 @@
 <var>${document_type}</var>
 <arg>(//div[contains(@class,"omaposti-core__sc")]/span[text()="Shipment" or text()="Letter" or text()="Invoice"])</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:21.912" level="INFO">${document_type} = Shipment</msg>
-<status status="PASS" starttime="20221115 13:54:21.890" endtime="20221115 13:54:21.912"/>
+<msg timestamp="20221115 15:08:58.253" level="INFO">${document_type} = Shipment</msg>
+<status status="PASS" starttime="20221115 15:08:58.233" endtime="20221115 15:08:58.253"/>
 </kw>
 <kw name="Append To List" library="Collections">
 <arg>${list_feed}</arg>
 <arg>${document_type}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20221115 13:54:21.912" endtime="20221115 13:54:21.913"/>
+<status status="PASS" starttime="20221115 15:08:58.253" endtime="20221115 15:08:58.254"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:21.890" endtime="20221115 13:54:21.913"/>
+<status status="PASS" starttime="20221115 15:08:58.233" endtime="20221115 15:08:58.254"/>
 </iter>
-<status status="PASS" starttime="20221115 13:54:21.699" endtime="20221115 13:54:21.913"/>
+<status status="PASS" starttime="20221115 15:08:58.066" endtime="20221115 15:08:58.254"/>
 </for>
 <kw name="Log" library="BuiltIn">
 <arg>${list_feed}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20221115 13:54:21.913" level="INFO">['Shipment', 'Shipment', 'Shipment', 'Shipment', 'Shipment', 'Shipment', 'Shipment']</msg>
-<status status="PASS" starttime="20221115 13:54:21.913" endtime="20221115 13:54:21.913"/>
+<msg timestamp="20221115 15:08:58.254" level="INFO">['Shipment', 'Shipment', 'Shipment', 'Shipment', 'Shipment', 'Shipment', 'Shipment']</msg>
+<status status="PASS" starttime="20221115 15:08:58.254" endtime="20221115 15:08:58.254"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${list_feed}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20221115 13:54:21.913" level="INFO">${list_feed} = ['Shipment', 'Shipment', 'Shipment', 'Shipment', 'Shipment', 'Shipment', 'Shipment']</msg>
-<status status="PASS" starttime="20221115 13:54:21.913" endtime="20221115 13:54:21.914"/>
+<msg timestamp="20221115 15:08:58.255" level="INFO">${list_feed} = ['Shipment', 'Shipment', 'Shipment', 'Shipment', 'Shipment', 'Shipment', 'Shipment']</msg>
+<status status="PASS" starttime="20221115 15:08:58.254" endtime="20221115 15:08:58.255"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:21.638" endtime="20221115 13:54:21.914"/>
+<status status="PASS" starttime="20221115 15:08:58.013" endtime="20221115 15:08:58.255"/>
 </kw>
 <kw name="Validate list_feed contains only the filtered type - Shipment(parcel)" library="home_page">
 <kw name="List Should Not Contain Value" library="Collections">
 <arg>${list_feed}</arg>
 <arg>Letter</arg>
 <doc>Fails if the ``value`` is found from ``list``.</doc>
-<status status="PASS" starttime="20221115 13:54:21.914" endtime="20221115 13:54:21.915"/>
+<status status="PASS" starttime="20221115 15:08:58.256" endtime="20221115 15:08:58.256"/>
 </kw>
 <kw name="List Should Not Contain Value" library="Collections">
 <arg>${list_feed}</arg>
 <arg>Invoice</arg>
 <doc>Fails if the ``value`` is found from ``list``.</doc>
-<status status="PASS" starttime="20221115 13:54:21.915" endtime="20221115 13:54:21.915"/>
+<status status="PASS" starttime="20221115 15:08:58.256" endtime="20221115 15:08:58.256"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:21.914" endtime="20221115 13:54:21.916"/>
+<status status="PASS" starttime="20221115 15:08:58.255" endtime="20221115 15:08:58.256"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:21.097" endtime="20221115 13:54:21.916"/>
+<status status="PASS" starttime="20221115 15:08:57.733" endtime="20221115 15:08:58.257"/>
 </test>
-<test id="s1-t4" name="TC_03_Validate Filter for invoice - only invoice should be visible in the feed" line="39">
+<test id="s1-t4" name="TC_03_Validate Filter for invoice - only invoice should be visible in the feed" line="40">
 <kw name="Select document_type from the list" library="home_page">
 <arg>invoice</arg>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>//button[contains(@aria-label,"Show only")]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:21.919" level="INFO">Clicking button '//button[contains(@aria-label,"Show only")]'.</msg>
-<status status="PASS" starttime="20221115 13:54:21.919" endtime="20221115 13:54:22.059"/>
+<msg timestamp="20221115 15:08:58.260" level="INFO">Clicking button '//button[contains(@aria-label,"Show only")]'.</msg>
+<status status="PASS" starttime="20221115 15:08:58.259" endtime="20221115 15:08:58.346"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${document_type}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20221115 13:54:22.059" level="INFO">invoice</msg>
-<status status="PASS" starttime="20221115 13:54:22.059" endtime="20221115 13:54:22.060"/>
+<msg timestamp="20221115 15:08:58.347" level="INFO">invoice</msg>
+<status status="PASS" starttime="20221115 15:08:58.346" endtime="20221115 15:08:58.347"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//li[@value="${document_type}"]</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:22.060" endtime="20221115 13:54:22.173"/>
+<status status="PASS" starttime="20221115 15:08:58.348" endtime="20221115 15:08:58.410"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//li[@value="${document_type}"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:22.174" level="INFO">Clicking element '//li[@value="invoice"]'.</msg>
-<status status="PASS" starttime="20221115 13:54:22.173" endtime="20221115 13:54:22.285"/>
+<msg timestamp="20221115 15:08:58.415" level="INFO">Clicking element '//li[@value="invoice"]'.</msg>
+<status status="PASS" starttime="20221115 15:08:58.411" endtime="20221115 15:08:58.621"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:21.918" endtime="20221115 13:54:22.286"/>
+<status status="PASS" starttime="20221115 15:08:58.259" endtime="20221115 15:08:58.622"/>
 </kw>
 <kw name="Count the number of inbox feeds and list the document type" library="home_page">
 <kw name="Get Element Count" library="SeleniumLibrary">
 <var>${count}</var>
 <arg>(//button[contains(@class,"omaposti-core__sc") and @lang="en"])</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<msg timestamp="20221115 13:54:22.379" level="INFO">${count} = 0</msg>
-<status status="PASS" starttime="20221115 13:54:22.287" endtime="20221115 13:54:22.379"/>
+<msg timestamp="20221115 15:08:58.706" level="INFO">${count} = 0</msg>
+<status status="PASS" starttime="20221115 15:08:58.623" endtime="20221115 15:08:58.706"/>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <var>@{list_feed}</var>
 <doc>Returns a list containing given items.</doc>
-<msg timestamp="20221115 13:54:22.380" level="INFO">@{list_feed} = [ ]</msg>
-<status status="PASS" starttime="20221115 13:54:22.379" endtime="20221115 13:54:22.380"/>
+<msg timestamp="20221115 15:08:58.707" level="INFO">@{list_feed} = [ ]</msg>
+<status status="PASS" starttime="20221115 15:08:58.706" endtime="20221115 15:08:58.707"/>
 </kw>
 <for flavor="IN RANGE">
 <var>${i}</var>
@@ -492,225 +492,225 @@
 <var>${document_type}</var>
 <arg>(//div[contains(@class,"omaposti-core__sc")]/span[text()="Shipment" or text()="Letter" or text()="Invoice"])</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20221115 13:54:22.380" endtime="20221115 13:54:22.380"/>
+<status status="NOT RUN" starttime="20221115 15:08:58.707" endtime="20221115 15:08:58.707"/>
 </kw>
 <kw name="Append To List" library="Collections">
 <arg>${list_feed}</arg>
 <arg>${document_type}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="NOT RUN" starttime="20221115 13:54:22.380" endtime="20221115 13:54:22.380"/>
+<status status="NOT RUN" starttime="20221115 15:08:58.708" endtime="20221115 15:08:58.708"/>
 </kw>
-<status status="NOT RUN" starttime="20221115 13:54:22.380" endtime="20221115 13:54:22.380"/>
+<status status="NOT RUN" starttime="20221115 15:08:58.707" endtime="20221115 15:08:58.708"/>
 </iter>
-<status status="NOT RUN" starttime="20221115 13:54:22.380" endtime="20221115 13:54:22.380"/>
+<status status="NOT RUN" starttime="20221115 15:08:58.707" endtime="20221115 15:08:58.708"/>
 </for>
 <kw name="Log" library="BuiltIn">
 <arg>${list_feed}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20221115 13:54:22.381" level="INFO">[]</msg>
-<status status="PASS" starttime="20221115 13:54:22.381" endtime="20221115 13:54:22.381"/>
+<msg timestamp="20221115 15:08:58.708" level="INFO">[]</msg>
+<status status="PASS" starttime="20221115 15:08:58.708" endtime="20221115 15:08:58.708"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${list_feed}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20221115 13:54:22.381" level="INFO">${list_feed} = []</msg>
-<status status="PASS" starttime="20221115 13:54:22.381" endtime="20221115 13:54:22.381"/>
+<msg timestamp="20221115 15:08:58.709" level="INFO">${list_feed} = []</msg>
+<status status="PASS" starttime="20221115 15:08:58.708" endtime="20221115 15:08:58.709"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:22.286" endtime="20221115 13:54:22.382"/>
+<status status="PASS" starttime="20221115 15:08:58.622" endtime="20221115 15:08:58.709"/>
 </kw>
 <kw name="Validate list_feed contains only the filtered type - Invoice" library="home_page">
 <kw name="List Should Not Contain Value" library="Collections">
 <arg>${list_feed}</arg>
 <arg>Shipment</arg>
 <doc>Fails if the ``value`` is found from ``list``.</doc>
-<status status="PASS" starttime="20221115 13:54:22.383" endtime="20221115 13:54:22.383"/>
+<status status="PASS" starttime="20221115 15:08:58.710" endtime="20221115 15:08:58.710"/>
 </kw>
 <kw name="List Should Not Contain Value" library="Collections">
 <arg>${list_feed}</arg>
 <arg>Letter</arg>
 <doc>Fails if the ``value`` is found from ``list``.</doc>
-<status status="PASS" starttime="20221115 13:54:22.384" endtime="20221115 13:54:22.384"/>
+<status status="PASS" starttime="20221115 15:08:58.710" endtime="20221115 15:08:58.710"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:22.382" endtime="20221115 13:54:22.384"/>
+<status status="PASS" starttime="20221115 15:08:58.709" endtime="20221115 15:08:58.711"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:21.917" endtime="20221115 13:54:22.384"/>
+<status status="PASS" starttime="20221115 15:08:58.258" endtime="20221115 15:08:58.711"/>
 </test>
-<test id="s1-t5" name="TC_04_Validate archive any product from Inbox and send those back to inbox from archives" line="44">
+<test id="s1-t5" name="TC_04_Validate archive any product from Inbox and send those back to inbox from archives" line="45">
 <kw name="Select document_type from the list" library="home_page">
 <arg>all</arg>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>//button[contains(@aria-label,"Show only")]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:22.389" level="INFO">Clicking button '//button[contains(@aria-label,"Show only")]'.</msg>
-<status status="PASS" starttime="20221115 13:54:22.388" endtime="20221115 13:54:22.511"/>
+<msg timestamp="20221115 15:08:58.715" level="INFO">Clicking button '//button[contains(@aria-label,"Show only")]'.</msg>
+<status status="PASS" starttime="20221115 15:08:58.715" endtime="20221115 15:08:58.832"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${document_type}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20221115 13:54:22.511" level="INFO">all</msg>
-<status status="PASS" starttime="20221115 13:54:22.511" endtime="20221115 13:54:22.512"/>
+<msg timestamp="20221115 15:08:58.833" level="INFO">all</msg>
+<status status="PASS" starttime="20221115 15:08:58.832" endtime="20221115 15:08:58.833"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//li[@value="${document_type}"]</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:22.512" endtime="20221115 13:54:22.617"/>
+<status status="PASS" starttime="20221115 15:08:58.833" endtime="20221115 15:08:58.906"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//li[@value="${document_type}"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:22.618" level="INFO">Clicking element '//li[@value="all"]'.</msg>
-<status status="PASS" starttime="20221115 13:54:22.617" endtime="20221115 13:54:22.786"/>
+<msg timestamp="20221115 15:08:58.908" level="INFO">Clicking element '//li[@value="all"]'.</msg>
+<status status="PASS" starttime="20221115 15:08:58.907" endtime="20221115 15:08:59.044"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:22.387" endtime="20221115 13:54:22.786"/>
+<status status="PASS" starttime="20221115 15:08:58.714" endtime="20221115 15:08:59.044"/>
 </kw>
 <kw name="Select a document from inbox and send it to archive" library="home_page">
 <arg>${feed_id}</arg>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${feed_id}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20221115 13:54:22.788" level="INFO">${feed_id} = JJFI234567892</msg>
-<status status="PASS" starttime="20221115 13:54:22.788" endtime="20221115 13:54:22.788"/>
+<msg timestamp="20221115 15:08:59.047" level="INFO">${feed_id} = JJFI234567892</msg>
+<status status="PASS" starttime="20221115 15:08:59.046" endtime="20221115 15:08:59.047"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//div[contains(@class,"omaposti-core__sc")] /span[text()="${feed_id}"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:22.789" level="INFO">Clicking element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567892"]'.</msg>
-<status status="PASS" starttime="20221115 13:54:22.788" endtime="20221115 13:54:23.193"/>
+<msg timestamp="20221115 15:08:59.049" level="INFO">Clicking element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567892"]'.</msg>
+<status status="PASS" starttime="20221115 15:08:59.048" endtime="20221115 15:08:59.475"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221115 13:54:24.195" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20221115 13:54:23.194" endtime="20221115 13:54:24.195"/>
+<msg timestamp="20221115 15:09:00.494" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221115 15:08:59.475" endtime="20221115 15:09:00.494"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//div[contains(@class,"omaposti-core__sc")] /span[text()="${feed_id}"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:24.196" level="INFO">Clicking element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567892"]'.</msg>
-<status status="PASS" starttime="20221115 13:54:24.196" endtime="20221115 13:54:24.732"/>
+<msg timestamp="20221115 15:09:00.495" level="INFO">Clicking element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567892"]'.</msg>
+<status status="PASS" starttime="20221115 15:09:00.494" endtime="20221115 15:09:00.651"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>(//button[@aria-haspopup='listbox'])[2]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:24.732" endtime="20221115 13:54:24.975"/>
+<status status="PASS" starttime="20221115 15:09:00.652" endtime="20221115 15:09:00.896"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>(//button[@aria-haspopup='listbox'])[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:24.975" level="INFO">Clicking element '(//button[@aria-haspopup='listbox'])[2]'.</msg>
-<status status="PASS" starttime="20221115 13:54:24.975" endtime="20221115 13:54:25.096"/>
+<msg timestamp="20221115 15:09:00.897" level="INFO">Clicking element '(//button[@aria-haspopup='listbox'])[2]'.</msg>
+<status status="PASS" starttime="20221115 15:09:00.896" endtime="20221115 15:09:00.969"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//p[text()="Archive"]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:25.096" endtime="20221115 13:54:25.354"/>
+<status status="PASS" starttime="20221115 15:09:00.970" endtime="20221115 15:09:01.218"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//p[text()="Archive"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:25.355" level="INFO">Clicking element '//p[text()="Archive"]'.</msg>
-<status status="PASS" starttime="20221115 13:54:25.354" endtime="20221115 13:54:25.468"/>
+<msg timestamp="20221115 15:09:01.219" level="INFO">Clicking element '//p[text()="Archive"]'.</msg>
+<status status="PASS" starttime="20221115 15:09:01.218" endtime="20221115 15:09:01.300"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>//div[contains(@class,"omaposti-core__sc")] /span[text()="${feed_id}"]</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221115 13:54:25.468" endtime="20221115 13:54:26.175"/>
+<status status="PASS" starttime="20221115 15:09:01.300" endtime="20221115 15:09:02.122"/>
 </kw>
 <kw name="Element Should Not Be Visible" library="SeleniumLibrary">
 <arg>//div[contains(@class,"omaposti-core__sc")] /span[text()="${feed_id}"]</arg>
 <doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
-<msg timestamp="20221115 13:54:26.194" level="INFO">Element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567892"]' did not exist.</msg>
-<status status="PASS" starttime="20221115 13:54:26.175" endtime="20221115 13:54:26.194"/>
+<msg timestamp="20221115 15:09:02.131" level="INFO">Element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567892"]' did not exist.</msg>
+<status status="PASS" starttime="20221115 15:09:02.122" endtime="20221115 15:09:02.131"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:22.787" endtime="20221115 13:54:26.194"/>
+<status status="PASS" starttime="20221115 15:08:59.045" endtime="20221115 15:09:02.132"/>
 </kw>
 <kw name="Select a document from archive and send it back to inbox" library="home_page">
 <arg>${feed_id}</arg>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//div[text()="Archive"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:26.196" level="INFO">Clicking element '//div[text()="Archive"]'.</msg>
-<status status="PASS" starttime="20221115 13:54:26.196" endtime="20221115 13:54:27.158"/>
+<msg timestamp="20221115 15:09:02.133" level="INFO">Clicking element '//div[text()="Archive"]'.</msg>
+<status status="PASS" starttime="20221115 15:09:02.133" endtime="20221115 15:09:02.484"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//button[contains(@id,"${feed_id}")]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:27.158" endtime="20221115 13:54:27.471"/>
+<status status="PASS" starttime="20221115 15:09:02.484" endtime="20221115 15:09:02.822"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[contains(@id,"${feed_id}")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:27.472" level="INFO">Clicking element '//button[contains(@id,"JJFI234567892")]'.</msg>
-<status status="PASS" starttime="20221115 13:54:27.471" endtime="20221115 13:54:27.584"/>
+<msg timestamp="20221115 15:09:02.823" level="INFO">Clicking element '//button[contains(@id,"JJFI234567892")]'.</msg>
+<status status="PASS" starttime="20221115 15:09:02.822" endtime="20221115 15:09:02.946"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221115 13:54:28.586" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20221115 13:54:27.585" endtime="20221115 13:54:28.586"/>
+<msg timestamp="20221115 15:09:03.946" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221115 15:09:02.946" endtime="20221115 15:09:03.946"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[contains(@id,"${feed_id}")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:28.586" level="INFO">Clicking element '//button[contains(@id,"JJFI234567892")]'.</msg>
-<status status="PASS" starttime="20221115 13:54:28.586" endtime="20221115 13:54:28.677"/>
+<msg timestamp="20221115 15:09:03.947" level="INFO">Clicking element '//button[contains(@id,"JJFI234567892")]'.</msg>
+<status status="PASS" starttime="20221115 15:09:03.947" endtime="20221115 15:09:04.085"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>(//button[@aria-haspopup='listbox'])[2]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:28.678" endtime="20221115 13:54:28.702"/>
+<status status="PASS" starttime="20221115 15:09:04.086" endtime="20221115 15:09:04.128"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>(//button[@aria-haspopup='listbox'])[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:28.703" level="INFO">Clicking element '(//button[@aria-haspopup='listbox'])[2]'.</msg>
-<status status="PASS" starttime="20221115 13:54:28.702" endtime="20221115 13:54:28.763"/>
+<msg timestamp="20221115 15:09:04.129" level="INFO">Clicking element '(//button[@aria-haspopup='listbox'])[2]'.</msg>
+<status status="PASS" starttime="20221115 15:09:04.128" endtime="20221115 15:09:04.230"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//p[text()="Move to inbox"]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:28.763" endtime="20221115 13:54:29.015"/>
+<status status="PASS" starttime="20221115 15:09:04.231" endtime="20221115 15:09:04.525"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//p[text()="Move to inbox"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:29.015" level="INFO">Clicking element '//p[text()="Move to inbox"]'.</msg>
-<status status="PASS" starttime="20221115 13:54:29.015" endtime="20221115 13:54:29.088"/>
+<msg timestamp="20221115 15:09:04.526" level="INFO">Clicking element '//p[text()="Move to inbox"]'.</msg>
+<status status="PASS" starttime="20221115 15:09:04.526" endtime="20221115 15:09:04.675"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221115 13:54:34.089" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20221115 13:54:29.088" endtime="20221115 13:54:34.089"/>
+<msg timestamp="20221115 15:09:09.678" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221115 15:09:04.675" endtime="20221115 15:09:09.678"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id:label-mainMenuInbox</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:34.090" level="INFO">Clicking element 'id:label-mainMenuInbox'.</msg>
-<status status="PASS" starttime="20221115 13:54:34.089" endtime="20221115 13:54:34.294"/>
+<msg timestamp="20221115 15:09:09.679" level="INFO">Clicking element 'id:label-mainMenuInbox'.</msg>
+<status status="PASS" starttime="20221115 15:09:09.679" endtime="20221115 15:09:09.961"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:26.195" endtime="20221115 13:54:34.294"/>
+<status status="PASS" starttime="20221115 15:09:02.132" endtime="20221115 15:09:09.961"/>
 </kw>
 <kw name="Validate the items sent to archive and sent back to inbox from archives is same" library="home_page">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//div[contains(@class,"omaposti-core__sc")] /span[text()="${feed_id}"]</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:34.296" endtime="20221115 13:54:34.577"/>
+<status status="PASS" starttime="20221115 15:09:09.966" endtime="20221115 15:09:10.286"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>//div[contains(@class,"omaposti-core__sc")] /span[text()="${feed_id}"]</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20221115 13:54:34.595" level="INFO">Element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567892"]' is displayed.</msg>
-<status status="PASS" starttime="20221115 13:54:34.577" endtime="20221115 13:54:34.595"/>
+<msg timestamp="20221115 15:09:10.305" level="INFO">Element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567892"]' is displayed.</msg>
+<status status="PASS" starttime="20221115 15:09:10.286" endtime="20221115 15:09:10.305"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:34.295" endtime="20221115 13:54:34.595"/>
+<status status="PASS" starttime="20221115 15:09:09.962" endtime="20221115 15:09:10.305"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:22.385" endtime="20221115 13:54:34.595"/>
+<status status="PASS" starttime="20221115 15:08:58.712" endtime="20221115 15:09:10.305"/>
 </test>
-<test id="s1-t6" name="TC_09_User should be able to access Archive folder and send items back to inbox" line="50">
+<test id="s1-t6" name="TC_09_User should be able to access Archive folder and send items back to inbox" line="51">
 <kw name="Run Keywords" library="BuiltIn" type="SETUP">
 <arg>Select document_type from the list</arg>
 <arg>all</arg>
@@ -723,206 +723,206 @@
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>//button[contains(@aria-label,"Show only")]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:34.599" level="INFO">Clicking button '//button[contains(@aria-label,"Show only")]'.</msg>
-<status status="PASS" starttime="20221115 13:54:34.599" endtime="20221115 13:54:34.706"/>
+<msg timestamp="20221115 15:09:10.309" level="INFO">Clicking button '//button[contains(@aria-label,"Show only")]'.</msg>
+<status status="PASS" starttime="20221115 15:09:10.309" endtime="20221115 15:09:10.504"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${document_type}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20221115 13:54:34.708" level="INFO">all</msg>
-<status status="PASS" starttime="20221115 13:54:34.707" endtime="20221115 13:54:34.709"/>
+<msg timestamp="20221115 15:09:10.505" level="INFO">all</msg>
+<status status="PASS" starttime="20221115 15:09:10.504" endtime="20221115 15:09:10.505"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//li[@value="${document_type}"]</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:34.709" endtime="20221115 13:54:34.819"/>
+<status status="PASS" starttime="20221115 15:09:10.505" endtime="20221115 15:09:10.536"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//li[@value="${document_type}"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:34.820" level="INFO">Clicking element '//li[@value="all"]'.</msg>
-<status status="PASS" starttime="20221115 13:54:34.820" endtime="20221115 13:54:34.926"/>
+<msg timestamp="20221115 15:09:10.537" level="INFO">Clicking element '//li[@value="all"]'.</msg>
+<status status="PASS" starttime="20221115 15:09:10.536" endtime="20221115 15:09:10.659"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:34.598" endtime="20221115 13:54:34.926"/>
+<status status="PASS" starttime="20221115 15:09:10.308" endtime="20221115 15:09:10.660"/>
 </kw>
 <kw name="Select a document from inbox and send it to archive" library="home_page">
 <arg>${feed_id}</arg>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${feed_id}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20221115 13:54:34.932" level="INFO">${feed_id} = JJFI234567892</msg>
-<status status="PASS" starttime="20221115 13:54:34.929" endtime="20221115 13:54:34.932"/>
+<msg timestamp="20221115 15:09:10.661" level="INFO">${feed_id} = JJFI234567892</msg>
+<status status="PASS" starttime="20221115 15:09:10.660" endtime="20221115 15:09:10.661"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//div[contains(@class,"omaposti-core__sc")] /span[text()="${feed_id}"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:34.933" level="INFO">Clicking element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567892"]'.</msg>
-<status status="PASS" starttime="20221115 13:54:34.933" endtime="20221115 13:54:35.318"/>
+<msg timestamp="20221115 15:09:10.661" level="INFO">Clicking element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567892"]'.</msg>
+<status status="PASS" starttime="20221115 15:09:10.661" endtime="20221115 15:09:11.005"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221115 13:54:36.319" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20221115 13:54:35.318" endtime="20221115 13:54:36.319"/>
+<msg timestamp="20221115 15:09:12.006" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221115 15:09:11.005" endtime="20221115 15:09:12.006"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//div[contains(@class,"omaposti-core__sc")] /span[text()="${feed_id}"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:36.320" level="INFO">Clicking element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567892"]'.</msg>
-<status status="PASS" starttime="20221115 13:54:36.319" endtime="20221115 13:54:36.384"/>
+<msg timestamp="20221115 15:09:12.006" level="INFO">Clicking element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567892"]'.</msg>
+<status status="PASS" starttime="20221115 15:09:12.006" endtime="20221115 15:09:12.071"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>(//button[@aria-haspopup='listbox'])[2]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:36.385" endtime="20221115 13:54:36.411"/>
+<status status="PASS" starttime="20221115 15:09:12.072" endtime="20221115 15:09:12.100"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>(//button[@aria-haspopup='listbox'])[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:36.412" level="INFO">Clicking element '(//button[@aria-haspopup='listbox'])[2]'.</msg>
-<status status="PASS" starttime="20221115 13:54:36.412" endtime="20221115 13:54:36.494"/>
+<msg timestamp="20221115 15:09:12.101" level="INFO">Clicking element '(//button[@aria-haspopup='listbox'])[2]'.</msg>
+<status status="PASS" starttime="20221115 15:09:12.100" endtime="20221115 15:09:12.174"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//p[text()="Archive"]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:36.496" endtime="20221115 13:54:36.779"/>
+<status status="PASS" starttime="20221115 15:09:12.175" endtime="20221115 15:09:12.449"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//p[text()="Archive"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:36.781" level="INFO">Clicking element '//p[text()="Archive"]'.</msg>
-<status status="PASS" starttime="20221115 13:54:36.780" endtime="20221115 13:54:36.937"/>
+<msg timestamp="20221115 15:09:12.451" level="INFO">Clicking element '//p[text()="Archive"]'.</msg>
+<status status="PASS" starttime="20221115 15:09:12.450" endtime="20221115 15:09:12.576"/>
 </kw>
 <kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
 <arg>//div[contains(@class,"omaposti-core__sc")] /span[text()="${feed_id}"]</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221115 13:54:36.938" endtime="20221115 13:54:37.666"/>
+<status status="PASS" starttime="20221115 15:09:12.576" endtime="20221115 15:09:13.322"/>
 </kw>
 <kw name="Element Should Not Be Visible" library="SeleniumLibrary">
 <arg>//div[contains(@class,"omaposti-core__sc")] /span[text()="${feed_id}"]</arg>
 <doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
-<msg timestamp="20221115 13:54:37.681" level="INFO">Element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567892"]' did not exist.</msg>
-<status status="PASS" starttime="20221115 13:54:37.666" endtime="20221115 13:54:37.681"/>
+<msg timestamp="20221115 15:09:13.333" level="INFO">Element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567892"]' did not exist.</msg>
+<status status="PASS" starttime="20221115 15:09:13.322" endtime="20221115 15:09:13.333"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:34.927" endtime="20221115 13:54:37.681"/>
+<status status="PASS" starttime="20221115 15:09:10.660" endtime="20221115 15:09:13.334"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:34.597" endtime="20221115 13:54:37.682"/>
+<status status="PASS" starttime="20221115 15:09:10.307" endtime="20221115 15:09:13.334"/>
 </kw>
 <kw name="Select a document from archive and send it back to inbox" library="home_page">
 <arg>${feed_id}</arg>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//div[text()="Archive"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:37.683" level="INFO">Clicking element '//div[text()="Archive"]'.</msg>
-<status status="PASS" starttime="20221115 13:54:37.683" endtime="20221115 13:54:37.927"/>
+<msg timestamp="20221115 15:09:13.335" level="INFO">Clicking element '//div[text()="Archive"]'.</msg>
+<status status="PASS" starttime="20221115 15:09:13.335" endtime="20221115 15:09:13.523"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//button[contains(@id,"${feed_id}")]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:37.928" endtime="20221115 13:54:38.181"/>
+<status status="PASS" starttime="20221115 15:09:13.523" endtime="20221115 15:09:13.791"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[contains(@id,"${feed_id}")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:38.181" level="INFO">Clicking element '//button[contains(@id,"JJFI234567892")]'.</msg>
-<status status="PASS" starttime="20221115 13:54:38.181" endtime="20221115 13:54:38.288"/>
+<msg timestamp="20221115 15:09:13.791" level="INFO">Clicking element '//button[contains(@id,"JJFI234567892")]'.</msg>
+<status status="PASS" starttime="20221115 15:09:13.791" endtime="20221115 15:09:13.906"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221115 13:54:39.289" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20221115 13:54:38.289" endtime="20221115 13:54:39.289"/>
+<msg timestamp="20221115 15:09:14.907" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221115 15:09:13.906" endtime="20221115 15:09:14.907"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[contains(@id,"${feed_id}")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:39.290" level="INFO">Clicking element '//button[contains(@id,"JJFI234567892")]'.</msg>
-<status status="PASS" starttime="20221115 13:54:39.290" endtime="20221115 13:54:39.355"/>
+<msg timestamp="20221115 15:09:14.908" level="INFO">Clicking element '//button[contains(@id,"JJFI234567892")]'.</msg>
+<status status="PASS" starttime="20221115 15:09:14.907" endtime="20221115 15:09:14.973"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>(//button[@aria-haspopup='listbox'])[2]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:39.357" endtime="20221115 13:54:39.384"/>
+<status status="PASS" starttime="20221115 15:09:14.974" endtime="20221115 15:09:14.997"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>(//button[@aria-haspopup='listbox'])[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:39.384" level="INFO">Clicking element '(//button[@aria-haspopup='listbox'])[2]'.</msg>
-<status status="PASS" starttime="20221115 13:54:39.384" endtime="20221115 13:54:39.447"/>
+<msg timestamp="20221115 15:09:14.997" level="INFO">Clicking element '(//button[@aria-haspopup='listbox'])[2]'.</msg>
+<status status="PASS" starttime="20221115 15:09:14.997" endtime="20221115 15:09:15.056"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//p[text()="Move to inbox"]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:39.447" endtime="20221115 13:54:39.729"/>
+<status status="PASS" starttime="20221115 15:09:15.056" endtime="20221115 15:09:15.327"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//p[text()="Move to inbox"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:39.731" level="INFO">Clicking element '//p[text()="Move to inbox"]'.</msg>
-<status status="PASS" starttime="20221115 13:54:39.730" endtime="20221115 13:54:39.817"/>
+<msg timestamp="20221115 15:09:15.328" level="INFO">Clicking element '//p[text()="Move to inbox"]'.</msg>
+<status status="PASS" starttime="20221115 15:09:15.327" endtime="20221115 15:09:15.430"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221115 13:54:44.817" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20221115 13:54:39.817" endtime="20221115 13:54:44.818"/>
+<msg timestamp="20221115 15:09:20.432" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221115 15:09:15.431" endtime="20221115 15:09:20.432"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id:label-mainMenuInbox</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:44.819" level="INFO">Clicking element 'id:label-mainMenuInbox'.</msg>
-<status status="PASS" starttime="20221115 13:54:44.818" endtime="20221115 13:54:45.041"/>
+<msg timestamp="20221115 15:09:20.434" level="INFO">Clicking element 'id:label-mainMenuInbox'.</msg>
+<status status="PASS" starttime="20221115 15:09:20.433" endtime="20221115 15:09:20.662"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:37.682" endtime="20221115 13:54:45.041"/>
+<status status="PASS" starttime="20221115 15:09:13.334" endtime="20221115 15:09:20.663"/>
 </kw>
 <kw name="Validate the items sent to archive and sent back to inbox from archives is same" library="home_page">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//div[contains(@class,"omaposti-core__sc")] /span[text()="${feed_id}"]</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:45.042" endtime="20221115 13:54:45.351"/>
+<status status="PASS" starttime="20221115 15:09:20.666" endtime="20221115 15:09:20.984"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>//div[contains(@class,"omaposti-core__sc")] /span[text()="${feed_id}"]</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20221115 13:54:45.375" level="INFO">Element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567892"]' is displayed.</msg>
-<status status="PASS" starttime="20221115 13:54:45.351" endtime="20221115 13:54:45.375"/>
+<msg timestamp="20221115 15:09:21.003" level="INFO">Element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567892"]' is displayed.</msg>
+<status status="PASS" starttime="20221115 15:09:20.984" endtime="20221115 15:09:21.003"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:45.042" endtime="20221115 13:54:45.375"/>
+<status status="PASS" starttime="20221115 15:09:20.665" endtime="20221115 15:09:21.003"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:34.596" endtime="20221115 13:54:45.376"/>
+<status status="PASS" starttime="20221115 15:09:10.306" endtime="20221115 15:09:21.004"/>
 </test>
-<test id="s1-t7" name="TC_05_Validate Click on track to add JJFI234567893 to the tracking and it should be immediately visible on feed" line="56">
+<test id="s1-t7" name="TC_05_Validate Click on track to add JJFI234567893 to the tracking and it should be immediately visible on feed" line="57">
 <kw name="Click on track and enter shipment_id" library="home_page">
 <arg>${shipment_id}</arg>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[@aria-label="Track item"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:45.379" level="INFO">Clicking element '//button[@aria-label="Track item"]'.</msg>
-<status status="PASS" starttime="20221115 13:54:45.378" endtime="20221115 13:54:45.606"/>
+<msg timestamp="20221115 15:09:21.008" level="INFO">Clicking element '//button[@aria-label="Track item"]'.</msg>
+<status status="PASS" starttime="20221115 15:09:21.007" endtime="20221115 15:09:21.213"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>id:add-parcel-tracking-code</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:45.606" endtime="20221115 13:54:46.009"/>
+<status status="PASS" starttime="20221115 15:09:21.214" endtime="20221115 15:09:21.493"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:add-parcel-tracking-code</arg>
 <arg>${shipment_id}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:46.012" level="INFO">Typing text 'JJFI234567898' into text field 'id:add-parcel-tracking-code'.</msg>
-<status status="PASS" starttime="20221115 13:54:46.010" endtime="20221115 13:54:46.504"/>
+<msg timestamp="20221115 15:09:21.493" level="INFO">Typing text 'JJFI234567898' into text field 'id:add-parcel-tracking-code'.</msg>
+<status status="PASS" starttime="20221115 15:09:21.493" endtime="20221115 15:09:21.911"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button/span/span[text()="Track item"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:46.504" level="INFO">Clicking element '//button/span/span[text()="Track item"]'.</msg>
-<status status="PASS" starttime="20221115 13:54:46.504" endtime="20221115 13:54:46.662"/>
+<msg timestamp="20221115 15:09:21.911" level="INFO">Clicking element '//button/span/span[text()="Track item"]'.</msg>
+<status status="PASS" starttime="20221115 15:09:21.911" endtime="20221115 15:09:22.096"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:45.378" endtime="20221115 13:54:46.662"/>
+<status status="PASS" starttime="20221115 15:09:21.006" endtime="20221115 15:09:22.096"/>
 </kw>
 <kw name="Validate addition of shipment_id in feed" library="home_page">
 <arg>${shipment_id}</arg>
@@ -930,62 +930,62 @@
 <arg>//div[contains(@class,"omaposti-core__sc")] /span[text()="${shipment_id}"]</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:46.664" endtime="20221115 13:54:47.443"/>
+<status status="PASS" starttime="20221115 15:09:22.098" endtime="20221115 15:09:22.787"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>//div[contains(@class,"omaposti-core__sc")] /span[text()="${shipment_id}"]</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20221115 13:54:47.586" level="INFO">Element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567898"]' is displayed.</msg>
-<status status="PASS" starttime="20221115 13:54:47.444" endtime="20221115 13:54:47.586"/>
+<msg timestamp="20221115 15:09:22.856" level="INFO">Element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567898"]' is displayed.</msg>
+<status status="PASS" starttime="20221115 15:09:22.788" endtime="20221115 15:09:22.856"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:46.663" endtime="20221115 13:54:47.586"/>
+<status status="PASS" starttime="20221115 15:09:22.097" endtime="20221115 15:09:22.856"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:45.377" endtime="20221115 13:54:47.586"/>
+<status status="PASS" starttime="20221115 15:09:21.005" endtime="20221115 15:09:22.857"/>
 </test>
-<test id="s1-t8" name="TC_07_Deleted shipment Letters or Invoices should not be visible and retrievable" line="61">
+<test id="s1-t8" name="TC_06_Deleted shipment Letters or Invoices should not be visible and retrievable" line="62">
 <kw name="Select document from feed and delete the document" library="home_page">
 <arg>${shipment_id}</arg>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//div[contains(@class,"omaposti-core__sc")] /span[text()="${feed_id}"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:47.598" level="INFO">Clicking element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567898"]'.</msg>
-<status status="PASS" starttime="20221115 13:54:47.597" endtime="20221115 13:54:48.015"/>
+<msg timestamp="20221115 15:09:22.862" level="INFO">Clicking element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567898"]'.</msg>
+<status status="PASS" starttime="20221115 15:09:22.861" endtime="20221115 15:09:23.344"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>(//button[@aria-haspopup='listbox'])[2]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:48.016" endtime="20221115 13:54:48.131"/>
+<status status="PASS" starttime="20221115 15:09:23.344" endtime="20221115 15:09:23.442"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>(//button[@aria-haspopup='listbox'])[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:48.132" level="INFO">Clicking element '(//button[@aria-haspopup='listbox'])[2]'.</msg>
-<status status="PASS" starttime="20221115 13:54:48.131" endtime="20221115 13:54:48.214"/>
+<msg timestamp="20221115 15:09:23.442" level="INFO">Clicking element '(//button[@aria-haspopup='listbox'])[2]'.</msg>
+<status status="PASS" starttime="20221115 15:09:23.442" endtime="20221115 15:09:23.513"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//p[text()="Delete"]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:48.214" endtime="20221115 13:54:48.474"/>
+<status status="PASS" starttime="20221115 15:09:23.513" endtime="20221115 15:09:23.790"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//p[text()="Delete"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:48.475" level="INFO">Clicking element '//p[text()="Delete"]'.</msg>
-<status status="PASS" starttime="20221115 13:54:48.475" endtime="20221115 13:54:48.623"/>
+<msg timestamp="20221115 15:09:23.790" level="INFO">Clicking element '//p[text()="Delete"]'.</msg>
+<status status="PASS" starttime="20221115 15:09:23.790" endtime="20221115 15:09:23.944"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>id:delete-button</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:48.625" endtime="20221115 13:54:48.668"/>
+<status status="PASS" starttime="20221115 15:09:23.944" endtime="20221115 15:09:23.978"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id:delete-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:48.668" level="INFO">Clicking element 'id:delete-button'.</msg>
-<status status="PASS" starttime="20221115 13:54:48.668" endtime="20221115 13:54:48.774"/>
+<msg timestamp="20221115 15:09:23.978" level="INFO">Clicking element 'id:delete-button'.</msg>
+<status status="PASS" starttime="20221115 15:09:23.978" endtime="20221115 15:09:24.077"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:47.596" endtime="20221115 13:54:48.775"/>
+<status status="PASS" starttime="20221115 15:09:22.860" endtime="20221115 15:09:24.077"/>
 </kw>
 <kw name="Validate deleted shipment_id is not visible in feed" library="home_page">
 <arg>${shipment_id}</arg>
@@ -993,53 +993,53 @@
 <arg>//div[contains(@class,"omaposti-core__sc")] /span[text()="${deleted_id}"]</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is not visible.</doc>
-<status status="PASS" starttime="20221115 13:54:48.777" endtime="20221115 13:54:49.443"/>
+<status status="PASS" starttime="20221115 15:09:24.078" endtime="20221115 15:09:24.623"/>
 </kw>
 <kw name="Element Should Not Be Visible" library="SeleniumLibrary">
 <arg>//div[contains(@class,"omaposti-core__sc")] /span[text()="${deleted_id}"]</arg>
 <doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
-<msg timestamp="20221115 13:54:49.466" level="INFO">Element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567898"]' did not exist.</msg>
-<status status="PASS" starttime="20221115 13:54:49.443" endtime="20221115 13:54:49.466"/>
+<msg timestamp="20221115 15:09:24.642" level="INFO">Element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567898"]' did not exist.</msg>
+<status status="PASS" starttime="20221115 15:09:24.623" endtime="20221115 15:09:24.642"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:48.776" endtime="20221115 13:54:49.467"/>
+<status status="PASS" starttime="20221115 15:09:24.077" endtime="20221115 15:09:24.642"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:47.593" endtime="20221115 13:54:49.469"/>
+<status status="PASS" starttime="20221115 15:09:22.858" endtime="20221115 15:09:24.642"/>
 </test>
-<test id="s1-t9" name="TC_08_User should be able to edit multiple items using edit option and selecting the item to be edited" line="65">
+<test id="s1-t9" name="TC_08_User should be able to edit multiple items using edit option and selecting the item to be edited" line="66">
 <kw name="Select multiple items using edit and Send selected items to archive" library="home_page">
 <arg>${item_id_1}</arg>
 <arg>${item_id_2}</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>id:feedHeaderEditButton</arg>
-<arg>10s</arg>
+<arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:49.508" endtime="20221115 13:54:49.688"/>
+<status status="PASS" starttime="20221115 15:09:24.648" endtime="20221115 15:09:24.708"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id:feedHeaderEditButton</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:49.689" level="INFO">Clicking element 'id:feedHeaderEditButton'.</msg>
-<status status="PASS" starttime="20221115 13:54:49.689" endtime="20221115 13:54:49.873"/>
+<msg timestamp="20221115 15:09:24.709" level="INFO">Clicking element 'id:feedHeaderEditButton'.</msg>
+<status status="PASS" starttime="20221115 15:09:24.709" endtime="20221115 15:09:24.969"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//div[contains(@class,"omaposti-core__sc")] /span[text()="${item_id_1}"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:49.874" level="INFO">Clicking element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567891"]'.</msg>
-<status status="PASS" starttime="20221115 13:54:49.874" endtime="20221115 13:54:50.256"/>
+<msg timestamp="20221115 15:09:24.972" level="INFO">Clicking element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567891"]'.</msg>
+<status status="PASS" starttime="20221115 15:09:24.970" endtime="20221115 15:09:25.350"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//div[contains(@class,"omaposti-core__sc")] /span[text()="${item_id_2}"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:50.257" level="INFO">Clicking element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567890"]'.</msg>
-<status status="PASS" starttime="20221115 13:54:50.256" endtime="20221115 13:54:50.604"/>
+<msg timestamp="20221115 15:09:25.352" level="INFO">Clicking element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567890"]'.</msg>
+<status status="PASS" starttime="20221115 15:09:25.351" endtime="20221115 15:09:25.668"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id:feedEditActionsPanelArchiveButton</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:50.604" level="INFO">Clicking element 'id:feedEditActionsPanelArchiveButton'.</msg>
-<status status="PASS" starttime="20221115 13:54:50.604" endtime="20221115 13:54:50.801"/>
+<msg timestamp="20221115 15:09:25.670" level="INFO">Clicking element 'id:feedEditActionsPanelArchiveButton'.</msg>
+<status status="PASS" starttime="20221115 15:09:25.669" endtime="20221115 15:09:25.904"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:49.504" endtime="20221115 13:54:50.802"/>
+<status status="PASS" starttime="20221115 15:09:24.646" endtime="20221115 15:09:25.904"/>
 </kw>
 <kw name="Validate selected items are in archive folder" library="home_page">
 <arg>${item_id_1}</arg>
@@ -1047,28 +1047,28 @@
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//div[text()="Archive"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:50.804" level="INFO">Clicking element '//div[text()="Archive"]'.</msg>
-<status status="PASS" starttime="20221115 13:54:50.803" endtime="20221115 13:54:50.987"/>
+<msg timestamp="20221115 15:09:25.918" level="INFO">Clicking element '//div[text()="Archive"]'.</msg>
+<status status="PASS" starttime="20221115 15:09:25.917" endtime="20221115 15:09:26.202"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//div[contains(@class,"omaposti-core__sc")] /span[text()="${item_id_1}"]</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:50.987" endtime="20221115 13:54:51.298"/>
+<status status="PASS" starttime="20221115 15:09:26.203" endtime="20221115 15:09:26.559"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>//div[contains(@class,"omaposti-core__sc")] /span[text()="${item_id_1}"]</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20221115 13:54:51.330" level="INFO">Element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567891"]' is displayed.</msg>
-<status status="PASS" starttime="20221115 13:54:51.298" endtime="20221115 13:54:51.330"/>
+<msg timestamp="20221115 15:09:26.594" level="INFO">Element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567891"]' is displayed.</msg>
+<status status="PASS" starttime="20221115 15:09:26.559" endtime="20221115 15:09:26.594"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>//div[contains(@class,"omaposti-core__sc")] /span[text()="${item_id_2}"]</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20221115 13:54:51.382" level="INFO">Element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567890"]' is displayed.</msg>
-<status status="PASS" starttime="20221115 13:54:51.331" endtime="20221115 13:54:51.383"/>
+<msg timestamp="20221115 15:09:26.650" level="INFO">Element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567890"]' is displayed.</msg>
+<status status="PASS" starttime="20221115 15:09:26.594" endtime="20221115 15:09:26.650"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:50.802" endtime="20221115 13:54:51.383"/>
+<status status="PASS" starttime="20221115 15:09:25.906" endtime="20221115 15:09:26.650"/>
 </kw>
 <kw name="Send selected items back to inbox from archive" library="home_page" type="TEARDOWN">
 <arg>${item_id_1}</arg>
@@ -1076,150 +1076,154 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//button[contains(@id,"${item_id_1}")]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:51.386" endtime="20221115 13:54:51.487"/>
+<status status="PASS" starttime="20221115 15:09:26.656" endtime="20221115 15:09:26.764"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id:feedHeaderEditButton</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:51.488" level="INFO">Clicking element 'id:feedHeaderEditButton'.</msg>
-<status status="PASS" starttime="20221115 13:54:51.488" endtime="20221115 13:54:51.610"/>
+<msg timestamp="20221115 15:09:26.764" level="INFO">Clicking element 'id:feedHeaderEditButton'.</msg>
+<status status="PASS" starttime="20221115 15:09:26.764" endtime="20221115 15:09:26.933"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//div[contains(@class,"omaposti-core__sc")] /span[text()="${item_id_1}"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:51.614" level="INFO">Clicking element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567891"]'.</msg>
-<status status="PASS" starttime="20221115 13:54:51.611" endtime="20221115 13:54:51.765"/>
+<msg timestamp="20221115 15:09:26.947" level="INFO">Clicking element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567891"]'.</msg>
+<status status="PASS" starttime="20221115 15:09:26.934" endtime="20221115 15:09:27.129"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//div[contains(@class,"omaposti-core__sc")] /span[text()="${item_id_2}"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:51.766" level="INFO">Clicking element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567890"]'.</msg>
-<status status="PASS" starttime="20221115 13:54:51.766" endtime="20221115 13:54:51.917"/>
+<msg timestamp="20221115 15:09:27.131" level="INFO">Clicking element '//div[contains(@class,"omaposti-core__sc")] /span[text()="JJFI234567890"]'.</msg>
+<status status="PASS" starttime="20221115 15:09:27.130" endtime="20221115 15:09:27.302"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id:feedEditActionsPanelArchiveButton</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:51.917" level="INFO">Clicking element 'id:feedEditActionsPanelArchiveButton'.</msg>
-<status status="PASS" starttime="20221115 13:54:51.917" endtime="20221115 13:54:52.106"/>
+<msg timestamp="20221115 15:09:27.302" level="INFO">Clicking element 'id:feedEditActionsPanelArchiveButton'.</msg>
+<status status="PASS" starttime="20221115 15:09:27.302" endtime="20221115 15:09:27.496"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221115 13:54:57.109" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20221115 13:54:52.107" endtime="20221115 13:54:57.109"/>
+<msg timestamp="20221115 15:09:32.497" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221115 15:09:27.496" endtime="20221115 15:09:32.497"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id:label-mainMenuInbox</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:57.110" level="INFO">Clicking element 'id:label-mainMenuInbox'.</msg>
-<status status="PASS" starttime="20221115 13:54:57.109" endtime="20221115 13:54:57.348"/>
+<msg timestamp="20221115 15:09:32.498" level="INFO">Clicking element 'id:label-mainMenuInbox'.</msg>
+<status status="PASS" starttime="20221115 15:09:32.497" endtime="20221115 15:09:32.643"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:51.384" endtime="20221115 13:54:57.348"/>
+<status status="PASS" starttime="20221115 15:09:26.651" endtime="20221115 15:09:32.643"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:49.483" endtime="20221115 13:54:57.348"/>
+<status status="PASS" starttime="20221115 15:09:24.643" endtime="20221115 15:09:32.643"/>
 </test>
-<test id="s1-t10" name="TC_10_User should be able to find out and set nearest Posti Pickup point using the Zip code" line="70">
+<test id="s1-t10" name="TC_10_User should be able to find out and set nearest Posti Pickup point using the Zip code" line="71">
 <kw name="Navigate to the pickup point setting" library="home_page">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id:label-mainMenuSettings</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:57.377" level="INFO">Clicking element 'id:label-mainMenuSettings'.</msg>
-<status status="PASS" starttime="20221115 13:54:57.377" endtime="20221115 13:54:57.611"/>
+<msg timestamp="20221115 15:09:32.647" level="INFO">Clicking element 'id:label-mainMenuSettings'.</msg>
+<status status="PASS" starttime="20221115 15:09:32.647" endtime="20221115 15:09:32.884"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>id:label-lowerMenuSettingsMyPickUpPoint</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:57.612" endtime="20221115 13:54:57.804"/>
+<status status="PASS" starttime="20221115 15:09:32.884" endtime="20221115 15:09:32.974"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id:label-lowerMenuSettingsMyPickUpPoint</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:57.805" level="INFO">Clicking element 'id:label-lowerMenuSettingsMyPickUpPoint'.</msg>
-<status status="PASS" starttime="20221115 13:54:57.805" endtime="20221115 13:54:58.544"/>
+<msg timestamp="20221115 15:09:32.978" level="INFO">Clicking element 'id:label-lowerMenuSettingsMyPickUpPoint'.</msg>
+<status status="PASS" starttime="20221115 15:09:32.975" endtime="20221115 15:09:33.817"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//h4[text()='My pickup point']</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:58.544" endtime="20221115 13:54:58.834"/>
+<status status="PASS" starttime="20221115 15:09:33.817" endtime="20221115 15:09:34.106"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:57.376" endtime="20221115 13:54:58.834"/>
+<status status="PASS" starttime="20221115 15:09:32.646" endtime="20221115 15:09:34.106"/>
 </kw>
 <kw name="Enter the pickup point zip code and enable the pickup point" library="home_page">
 <arg>${zip_code}</arg>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button/span/span[text()='CHANGE']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:58.836" level="INFO">Clicking element '//button/span/span[text()='CHANGE']'.</msg>
-<status status="PASS" starttime="20221115 13:54:58.836" endtime="20221115 13:54:59.040"/>
+<msg timestamp="20221115 15:09:34.108" level="INFO">Clicking element '//button/span/span[text()='CHANGE']'.</msg>
+<status status="PASS" starttime="20221115 15:09:34.108" endtime="20221115 15:09:34.268"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//input[@placeholder='Enter postal code or address']</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:54:59.041" endtime="20221115 13:54:59.127"/>
+<status status="PASS" starttime="20221115 15:09:34.268" endtime="20221115 15:09:34.313"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[@placeholder='Enter postal code or address']</arg>
 <arg>${zip_code}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221115 13:54:59.128" level="INFO">Typing text '05800' into text field '//input[@placeholder='Enter postal code or address']'.</msg>
-<status status="PASS" starttime="20221115 13:54:59.127" endtime="20221115 13:54:59.415"/>
+<msg timestamp="20221115 15:09:34.314" level="INFO">Typing text '05800' into text field '//input[@placeholder='Enter postal code or address']'.</msg>
+<status status="PASS" starttime="20221115 15:09:34.313" endtime="20221115 15:09:34.584"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221115 13:55:02.416" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20221115 13:54:59.416" endtime="20221115 13:55:02.416"/>
+<msg timestamp="20221115 15:09:37.585" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221115 15:09:34.584" endtime="20221115 15:09:37.585"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//h4[text()='Posti, K-Citymarket Hyvinkää']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221115 13:55:02.417" level="INFO">Clicking element '//h4[text()='Posti, K-Citymarket Hyvinkää']'.</msg>
-<status status="PASS" starttime="20221115 13:55:02.416" endtime="20221115 13:55:02.501"/>
+<msg timestamp="20221115 15:09:37.596" level="INFO">Clicking element '//h4[text()='Posti, K-Citymarket Hyvinkää']'.</msg>
+<status status="PASS" starttime="20221115 15:09:37.586" endtime="20221115 15:09:37.702"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:58.835" endtime="20221115 13:55:02.501"/>
+<status status="PASS" starttime="20221115 15:09:34.107" endtime="20221115 15:09:37.702"/>
 </kw>
 <kw name="Validate the selected pickup point is enabled" library="home_page">
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221115 13:55:07.504" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20221115 13:55:02.503" endtime="20221115 13:55:07.504"/>
+<msg timestamp="20221115 15:09:42.708" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221115 15:09:37.707" endtime="20221115 15:09:42.708"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>(//h4[text()='Posti, K-Citymarket Hyvinkää'])[2]</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20221115 13:55:07.504" endtime="20221115 13:55:07.532"/>
+<status status="PASS" starttime="20221115 15:09:42.708" endtime="20221115 15:09:42.736"/>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>(//h4[text()='Posti, K-Citymarket Hyvinkää'])[2]</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20221115 13:55:07.532" endtime="20221115 13:55:07.805"/>
+<status status="PASS" starttime="20221115 15:09:42.736" endtime="20221115 15:09:43.064"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>(//h4[text()='Posti, K-Citymarket Hyvinkää'])[2]</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20221115 13:55:07.855" level="INFO">Element '(//h4[text()='Posti, K-Citymarket Hyvinkää'])[2]' is displayed.</msg>
-<status status="PASS" starttime="20221115 13:55:07.806" endtime="20221115 13:55:07.855"/>
+<msg timestamp="20221115 15:09:43.086" level="INFO">Element '(//h4[text()='Posti, K-Citymarket Hyvinkää'])[2]' is displayed.</msg>
+<status status="PASS" starttime="20221115 15:09:43.064" endtime="20221115 15:09:43.087"/>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>//input[@type='checkbox' and @aria-disabled='false']</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20221115 13:55:07.855" endtime="20221115 13:55:08.172"/>
+<status status="PASS" starttime="20221115 15:09:43.087" endtime="20221115 15:09:43.366"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20221115 13:55:08.359" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-49.png"&gt;&lt;img src="selenium-screenshot-49.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20221115 13:55:08.173" endtime="20221115 13:55:08.359"/>
+<msg timestamp="20221115 15:09:43.680" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-50.png"&gt;&lt;img src="selenium-screenshot-50.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221115 15:09:43.366" endtime="20221115 15:09:43.680"/>
 </kw>
-<status status="PASS" starttime="20221115 13:55:02.502" endtime="20221115 13:55:08.359"/>
+<status status="PASS" starttime="20221115 15:09:37.704" endtime="20221115 15:09:43.680"/>
 </kw>
-<status status="PASS" starttime="20221115 13:54:57.372" endtime="20221115 13:55:08.359"/>
+<status status="PASS" starttime="20221115 15:09:32.645" endtime="20221115 15:09:43.681"/>
 </test>
-<status status="PASS" starttime="20221115 13:53:48.036" endtime="20221115 13:55:08.361"/>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20221115 15:09:43.682" endtime="20221115 15:09:44.630"/>
+</kw>
+<status status="PASS" starttime="20221115 15:07:26.589" endtime="20221115 15:09:44.630"/>
 </suite>
 <statistics>
 <total>
