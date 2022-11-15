@@ -67,3 +67,10 @@ The values of variables can be edited as per requirement.
 - ${item_id_1}     *JJFI234567891*
 - ${item_id_2}    *JJFI234567890*
 - ${zip_code}    *05800*
+
+# Folder Structure
+
+1. tests - All test cases
+2. page objects - All page objects related keywords
+3. resources - utilities
+4. reports - All reports
