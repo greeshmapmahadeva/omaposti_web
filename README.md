@@ -35,10 +35,10 @@ Click load all your Inbox feeds
 
 
 
-6. Deleted shipment Letters or Invoices should not be visible and retrievable
+6. Deleted shipment Letters or Invoices should not be visible and retrievable - **TC_06_Deleted shipment Letters or Invoices should not be visible and retrievable**
 
 7. Adding an invoice manually should be possible by using Omaposti app - 
-    **TC_07_Deleted shipment Letters or Invoices should not be visible and retrievable**
+    
 
 
 8. User should be able to edit multiple items using edit option and selecting the item to be edited - 

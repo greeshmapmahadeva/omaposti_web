@@ -58,7 +58,7 @@ TC_05_Validate Click on track to add JJFI234567893 to the tracking and it should
     Validate addition of shipment_id in feed    ${shipment_id}
 
 
-TC_07_Deleted shipment Letters or Invoices should not be visible and retrievable
+TC_06_Deleted shipment Letters or Invoices should not be visible and retrievable
     Select document from feed and delete the document    ${shipment_id}
     Validate deleted shipment_id is not visible in feed    ${shipment_id}
 
